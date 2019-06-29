@@ -15,6 +15,14 @@
         android:layout_marginTop="50dp"
         android:textAppearance="?android:textAppearanceLarge"/>
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:id="@+id/text2"
+        android:background="@color/White"
+        android:textColor="#000"
+        android:textAppearance="?android:textAppearanceLarge"
+        />
 
     <Button
         android:id="@+id/btn2"

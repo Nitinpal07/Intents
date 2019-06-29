@@ -15,6 +15,15 @@
         android:layout_marginTop="50dp"
         android:textAppearance="?android:textAppearanceLarge"/>
 
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edittext1"
+        android:background="@color/White"
+        android:textColor="#000"
+        android:inputType="text"
+        android:textAppearance="?android:textAppearanceLarge"
+        />
 
     <Button
         android:id="@+id/btn1"
@@ -23,4 +32,11 @@
         android:gravity="center"
         android:layout_marginStart="125dp"
         android:text="Go to 2nd activity" />
+
+    <Button
+        android:id="@+id/btnexplicit"
+        android:layout_width="218dp"
+        android:layout_height="wrap_content"
+        android:text="Implicit Gmail/Intent"
+        android:layout_marginLeft="100dp"/>
 </LinearLayout>
