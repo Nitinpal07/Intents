@@ -19,12 +19,13 @@ public class MainActivity extends AppCompatActivity {
 
         Button btn =findViewById(R.id.btn1);
         Button btnexplicit =findViewById(R.id.btnexplicit);
-        final EditText edtxt = findViewById(R.id.edittext1);
+
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(),SecondActivity.class);
-                intent.putExtra(edtxt.toString(),"value for activity two");
+                EditText edtxt = findViewById(R.id.edittext1);
+                intent.putExtra("key1",edtxt.getText().toString());
                 startActivity(intent);
 
             }
