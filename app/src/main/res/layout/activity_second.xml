@@ -31,4 +31,14 @@
         android:gravity="center"
         android:layout_marginStart="125dp"
         android:text="Go to 1nd activity" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edittext2"
+        android:background="@color/White"
+        android:textColor="#000"
+        android:inputType="text"
+        android:textAppearance="?android:textAppearanceLarge"
+        />
 </LinearLayout>

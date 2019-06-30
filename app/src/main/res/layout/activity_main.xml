@@ -39,4 +39,10 @@
         android:layout_height="wrap_content"
         android:text="Implicit Gmail/Intent"
         android:layout_marginLeft="100dp"/>
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/White"
+        android:hint="result from 2nd activity"/>
 </LinearLayout>
