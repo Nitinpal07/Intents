@@ -31,7 +31,7 @@ public class SecondActivity extends AppCompatActivity {
             }
         });
 
-        
+
     }
 
     @Override

@@ -45,4 +45,15 @@
         android:layout_height="wrap_content"
         android:background="@color/White"
         android:hint="result from 2nd activity"/>
+
+
+    <ImageView
+        android:id="@+id/share"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_share_black_24dp"
+        style="@style/TextAppearance.AppCompat.Body1"
+        android:layout_gravity="center"
+        android:layout_marginTop="80dp"/>
+
 </LinearLayout>

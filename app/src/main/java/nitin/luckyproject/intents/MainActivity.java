@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -23,6 +24,7 @@ public static final int REQUEST_CODE = 111;
         Button btn =findViewById(R.id.btn1);
         Button btnexplicit =findViewById(R.id.btnexplicit);
 
+        ImageView image =findViewById(R.id.share);
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -42,6 +44,14 @@ public static final int REQUEST_CODE = 111;
                 startActivity(intent);
             }
         });
+
+        image.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                share();
+            }
+        });
+
     }
 
     @Override
@@ -54,5 +64,14 @@ public static final int REQUEST_CODE = 111;
                 txtview.setText(data.getExtras().getString("returnKey1"));
             }
         }
+    }
+
+
+    public void share()
+    {
+        Intent sharingIntent = new Intent(Intent.ACTION_SEND);
+        sharingIntent.setType("text/plain");
+        sharingIntent.putExtra(android.content.Intent.EXTRA_TEXT, "REPLACE WITH YOUR skillPoints");
+        startActivity(sharingIntent);
     }
 }
